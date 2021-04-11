@@ -1,0 +1,17 @@
+set rnu
+inoremap jk <ESC>
+let mapleader="'"
+set easymotion
+" nmap hh ^
+" nmap ll $
+nmap zgc :action CheckinProject<CR>
+nmap zrm :action ExtractMethod<CR><Esc>
+vmap zrm :action ExtractMethod<CR><Esc>
+imap zra <Esc>:action ReformatCode<CR>:action Run<CR>
+nmap zra :action ReformatCode<CR>:action Run<CR>
+nmap zn :action GotoNextError<CR>
+imap zn <Esc>:action GotoNextError<CR>
+nmap zro :action Move<CR>
+imap zro <Esc>:action Move<CR>
+nmap zsp :action IntroduceParameter<CR>
+imap zsp <Esc>:action IntroduceParameter<CR>
